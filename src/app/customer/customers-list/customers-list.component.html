@@ -1,0 +1,18 @@
+<div class="panel-body">
+    <div >Country Code {{countryCode}}</div>
+    <table id="groupedcustomerlist" class="table table-striped table-bordered table-sm row-border hover" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <th class="col-6">Name</th>
+          <th class="col-6">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let customer of tableData">
+          <td class="col-6">{{customer.name}}</td>
+          <td class="col-6">{{customer.phone}}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>

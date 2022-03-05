@@ -1,0 +1,18 @@
+<h3>
+  Update Customer
+</h3>
+  <form (ngSubmit)="onSubmit()">
+<div class="form-group">
+  <label for="name">Name</label>
+  <input type="text" class="form-control" id="name" [(ngModel)]="customer.name" name="name">
+
+</div>
+<div class="form-group">
+  <label for="name">Phone</label>
+  <input type="text" class="form-control" id="phone" [(ngModel)]="customer.phone" name="phone">
+
+</div>
+<button style='margin-right:16px' class="btn btn-success">Submit</button>
+<button style='margin-right:16px' (click)="listCustomers()" class="btn btn-success">Back to Customers</button>
+
+</form>

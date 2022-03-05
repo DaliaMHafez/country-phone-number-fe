@@ -1,0 +1,17 @@
+<h3>Create Customer</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="customer.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Phone number</label>
+      <input type="text" class="form-control" id="phone" required [(ngModel)]="customer.phone" name="phone">
+    </div>
+
+    <button class="btn btn-success">Submit</button>
+  </form>
+</div>
+
